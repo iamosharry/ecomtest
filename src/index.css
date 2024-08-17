@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #49557e;
+  left: 0;
+  bottom: -3px;
+  border-radius: 20px;
+}
+
+.background_image {
+  background-image: url("./assets/frontend_assets/dish-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.scroll_width {
+  scrollbar-width: none;
+}
+
+.counter {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: orangered;
+  top: -15px;
+  left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.activeCircle {
+  border: 5px solid orangered;
+  border-radius: 50%;
+}
+
+.light-nav {
+  background: white;
+}
+
+.zzz {
+  z-index: 300;
+}
